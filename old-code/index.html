@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./src/css/normalize.css">
+  <link rel="stylesheet" href="./src/css/main.css">
+
+  <title>Frontend Mentor | Todo app</title>
+
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>Todo</h1>
+      <button type="button" class="toggle-dark-theme" aria-label="Change theme">
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <form action="" class="new-task">
+      <div class="checkbox"></div>
+      <input type="text" placeholder="Create a new todo...">
+    </form>
+
+    <form id="delete-checked-tasks-form" action="" class="delete-checked-tasks-form">
+      <ul>
+
+        <li class="single-task">
+          <!-- drag and drop events are attached to inputs -->
+          <input type="checkbox" class="task-checkbox" name="">
+
+          <!-- clicking on label checks the adjacent input -->
+          <label for="">
+            Complete online JavaScript course
+          </label>
+
+          <button type="button" class="delete-task"></button>
+        </li>
+
+        <li class="single-task">
+          <!-- drag and drop events are attached to inputs -->
+          <input type="checkbox" class="task-checkbox" name="">
+
+          <!-- clicking on label checks the adjacent input -->
+          <label for="">
+            Jog around the park 3x
+          </label>
+
+          <button type="button" class="delete-task"></button>
+        </li>
+
+        <li class="single-task">
+          <!-- drag and drop events are attached to inputs -->
+          <input type="checkbox" class="task-checkbox" name="">
+
+          <!-- clicking on label checks the adjacent input -->
+          <label for="">
+            10 minutes meditation
+          </label>
+
+          <button type="button" class="delete-task"></button>
+        </li>
+
+        <li class="single-task">
+          <!-- drag and drop events are attached to inputs -->
+          <input type="checkbox" class="task-checkbox" name="">
+
+          <!-- clicking on label checks the adjacent input -->
+          <label for="">
+            Read for 1 hour
+          </label>
+
+          <button type="button" class="delete-task"></button>
+        </li>
+
+        <li class="single-task">
+          <!-- drag and drop events are attached to inputs -->
+          <input type="checkbox" class="task-checkbox" name="">
+
+          <!-- clicking on label checks the adjacent input -->
+          <label for="">
+            Pick up groceries
+          </label>
+
+          <button type="button" class="delete-task"></button>
+        </li>
+
+        <li class="single-task">
+          <!-- drag and drop events are attached to inputs -->
+          <input type="checkbox" class="task-checkbox" name="">
+
+          <!-- clicking on label checks the adjacent input -->
+          <label for="">
+            Complete Todo App on Frontend Mentor
+          </label>
+
+          <button type="button" class="delete-task"></button>
+        </li>
+      </ul>
+    </form>
+
+
+    <div class="tasks-state">
+
+      <div class="tasks-info">
+        <p class="tasks-count">
+          <!-- Add dynamic number --> 2 items left
+        </p>
+
+        <button form="delete-checked-tasks-form" type="submit" class="clear-tasks">
+          Clear Completed
+        </button>
+      </div>
+
+
+      <div class="tasks-filter">
+        <button type="button" class="filter-applied">All</button>
+        <button type="button">Active</button>
+        <button type="button">Completed</button>
+      </div>
+
+    </div>
+  </main>
+
+
+  <footer>
+    <div class="instructions">
+      Drag and drop to reorder list
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://adf.dev">Angélique D. Faye</a>.
+    </div>
+  </footer>
+  <script src="./src/js/index.js"></script>
+</body>
+
+</html>
